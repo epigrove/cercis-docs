@@ -48,6 +48,15 @@ cercis skill  <项目> --install codex    # 把技能包装到 ~/.codex/skills/
 cercis skill  <项目> --install claude   # 装到 Claude Code
 ```
 
+**还没建库就想先把 AI 教会？** 用通用技能包（不依赖任何项目，命令与红线是一样的）：
+
+```bash
+cercis skill --generic --install codex     # 或 --install claude
+cercis skill --generic --out ~/某目录       # 只想看看它写了什么
+```
+
+有具体项目后，再用上面的 `cercis skill <项目> --install …` 覆盖成**带你项目表结构**的那一版。
+
 装好之后，新开一个 AI 会话，它就能"**只凭技能包 + 项目里的文件**"走通：
 查数 → 试运行导入 → 确认写入 → 导出。
 
